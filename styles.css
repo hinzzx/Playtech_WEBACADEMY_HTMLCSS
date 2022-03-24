@@ -1,0 +1,173 @@
+* {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  top: 0;
+  margin-left: 0.6rem;
+  margin-right: 0.6rem;
+}
+
+body {
+  background: url(pexels-tara-winstead-8386422.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 1rem;
+}
+
+.navbar > li {
+  list-style: none;
+}
+
+.factory {
+  font-size: 1.675rem;
+  color: #161f49;
+}
+
+.logo {
+  width: 10rem;
+  height: 2rem;
+}
+
+.container-1 {
+  position: relative;
+  height: 40vh;
+  margin-top: 1em;
+  background-color: rgba(150, 150, 150, 0.8);
+  border: 1px black solid;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+
+.robot-header {
+  position: relative;
+  display: inline-flex;
+  border: 1px black solid;
+  height: fit-content;
+  padding-right: 1rem;
+  margin-left: 0;
+  border-left: none;
+  border-top: none;
+  border-radius: 0 0 10px 0;
+  white-space: nowrap;
+}
+
+.robot-header > h1 {
+  text-align: center;
+  font-size: 1.795rem;
+}
+
+
+
+.robot-container {
+
+  display: flex;
+  border: 1px black solid;
+  border-radius: 1rem;
+  width: 35%;
+  height: 80%;
+  background: white;
+  justify-content: center;
+  margin-top: 2.3rem;
+  margin-left: -6rem;
+}
+
+
+.paragraphs {
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 1rem;
+}
+
+.paragraphs > section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  
+}
+
+#para-1 {
+  width: 70%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  padding: 1rem;
+  border: 1px black solid;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 1rem;
+  font-size: 20px;
+  margin-bottom: 1rem;
+  text-align: left;
+  padding-right: 3%;
+  font-size: smaller;
+}
+
+#para-2 {
+  width: fit-content;
+  padding: 1rem;
+  border: 1px black solid;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 1rem;
+  font-size: 20px;
+  margin-bottom: 1rem;
+  text-align: justify;
+  padding-right: 6%;
+  font-size: smaller;
+}
+
+#para-3 {
+  width: fit-content;
+  padding: 1rem;
+  border: 1px black solid;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 1rem;
+  font-size: 20px;
+  margin-bottom: 1rem;
+  font-size: smaller;
+}
+
+
+
+.robot-head {
+  display: flex;
+  justify-content: space-around;
+  border: 1px solid black;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  margin-top: 2rem;
+}
+
+.eyes {
+  width: 30px;
+  height: 20px;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+  margin-left: 1.5rem;
+}
+
+.eyes-1 {
+  border: 1px solid black;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+}
+
+.eyes-2 {
+  border: 1px solid black;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  
+}
