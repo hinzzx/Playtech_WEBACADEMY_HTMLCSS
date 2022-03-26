@@ -21,7 +21,7 @@
         </li>
 
         <li class="playtech-logo">
-          <a href="https://www.playtech.com/">
+          <a href="https://www.playtech.com/" target="_blank">
             <img
               src="https://assets.playtech.com/application/files/2714/6279/0513/playtech-logo.png?version=1644420652"
               alt="Playtech"
@@ -33,39 +33,106 @@
 
     <div class="container-1">
       <nav class="robot-header">
-        <span><h1>Basic robot</h1></span>
+        <span><h1>BASIC ROBOT</h1></span>
       </nav>
 
       <div class="robot-container">
-      <div class="robot-drawing">
-        <div class="robot-head">
-          <div class="eyes">
-          <div class="eyes-1"></div>
-          <div class="eyes-2"></div>
-        </div>
-          <div class="mouth"></div>
-        </div>
-        <div class="chest">
-          <div class="left-arm"></div>
-          <div class="right-arm"></div>
-        </div>
-        <div class="legs">
-          <div class="left-leg"></div>
-          <div class="right-leg"></div>
+        <div class="robot-drawing">
+          <div class="robot-head">
+            <div class="mouth"></div>
+
+            <div class="eyes">
+              <div class="eyes-1"></div>
+              <div class="eyes-2"></div>
+            </div>
+          </div>
+          <div class="chest-container">
+            <div class="left-arm"></div>
+            <div class="body"></div>
+            <div class="right-arm"></div>
+          </div>
+          <div class="legs">
+            <div class="left-leg"></div>
+            <div class="right-leg"></div>
+          </div>
+
+          <span id="robot-name">
+            <h4 style="white-space: nowrap; margin-top: -0.765rem;
+          ">Robot Name</h4>
+          </span>
         </div>
       </div>
-    </div>
+
       <div class="paragraphs">
         <section>
           <p id="para-1">
-            Paragrapgh text here. Text-align on left, 3% space from right border.
-            Text is only 2 lines and ends with three dots ... Because its too long.
-            On hover full text is shown as tooltip. First letter is bold.
+            <span id="bold">P</span>aragraph text here. Text-align on left, 3% space from right border.
+            Text is only 2 lines and ends with three dots ... Because its too
+            long. On hover full text is shown as tooltip. First letter is bold.
           </p>
-          <p id="para-2">lorem ipsiamd ahjsd ajhdasjkhd aljshd </p>
-          <p id="para-3">pasdiadahsdenadace vdasdas duadasdaenddsace</p>
+          <p id="para-2">
+            <span id="italic">Paragraph</span> text here. Text justified, 6% space from right border.
+            Text is only 2 lines and ends with three dots ... Because its too
+            long. On hover full text is shown. First word is Italic.
+          </p>
+          <p id="para-3">
+            <img src="goodluck.jpg" alt="Goodluck Image" class="goodluck-img" />
+            Paragraph text here. Text-align on left, 9 % from right border.
+            Image on left side.
+          </p>
         </section>
       </div>
     </div>
+
+    <div class="container-2">
+      <nav class="create-robot-nav">
+        <h1 class="form-header">Create Robot</h1>
+        
+      </nav>
+      <hr />
+      <div class="create-robot-form">
+        <form id="robot-name">
+          <label>Name</label>
+          <input type="text" placeholder="Robot name" />
+        </form>
+        <form id="select-type">
+          <label>Select Type</label>
+          <select id="robot-type">
+            <option value="basic-robot" selected>Basic Robot</option>
+            <option value="small-robot">Small Robot</option>
+            
+          </select>
+        </form>
+
+        <form>
+          <label> Select Color</label>
+          <input type="color" value="#e96126"/>
+        </form>
+
+        <form id="select-options">
+          <label> Select Options</label>
+          <br />
+          <input type="checkbox" id="can-jump" name="canjump" value="Jumping" />
+          <label for="can-jump"> can jump</label><br />
+          <input type="checkbox" id="can-talk" name="cantalk" value="Talking" />
+          <label for="can-talk"> cam talk</label><br />
+          <input type="checkbox" id="can-blink" name="canblink" value="Blink" />
+          <label for="vehicle3"> can blink</label><br />
+        </form>
+        
+
+        <form>
+          <label for="w3review">Write a Comment:</label>
+          <textarea placeholder="text-area"> </textarea>
+        </form>
+        <br>
+        
+      </div><div class="buttons-test">
+          <button id="create-robot-btn">Create</button>
+          <br>
+          <button id="show-robots-btn"> Show Created Robots</button></span>
+        </div> <hr>
+    </div>
+   
   </body>
 </html>
