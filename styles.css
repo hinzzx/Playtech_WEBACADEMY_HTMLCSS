@@ -64,6 +64,9 @@ body {
 }
 
 .robot-drawing {
+
+  position: absolute;
+  margin-top: 2rem;
   width: 8rem;
   margin-left: 2rem;
 }
@@ -239,7 +242,7 @@ body {
   background-color: rgb(255, 255, 255);
   width: 2.9vmin;
   height: 1vmin;
-  margin-top: 7rem;
+  margin-top: 4.65rem;
   -webkit-animation-name: talk;
   -webkit-animation-duration: 1s;
   -webkit-animation-iteration-count: infinite;
@@ -364,7 +367,9 @@ body {
 }
 
 
-
+#centered-align {
+  align-items: center;
+}
 
 .create-robot-nav {
   display: inline-flex;
@@ -413,3 +418,4 @@ button {
   justify-content: flex-start;
   margin-bottom: 0.765rem;
 }
+
