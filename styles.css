@@ -48,14 +48,35 @@ body {
 
 .robot-header {
   display: inline-flex;
-  border: 1px black solid;
+  border: 1px solid black;
   height: fit-content;
-  padding-right: 1rem;
   margin-left: 0;
   border-left: none;
   border-top: none;
-  border-radius: 0 0 10px 0;
   white-space: nowrap;
+  padding-right: 1rem;
+}
+
+.ribbon-vertical {
+  position: absolute;
+  left: 10px;
+  border: 16px solid #161f49; /* All borders set */
+  border-top: 0; /* Remove left border */
+  border-bottom: 10px solid transparent; /* Right transparent */
+  height: auto; /* Increase element Width */
+  width: 0;
+  word-wrap: break-word;
+  color: white;
+  z-index: 1;
+  -webkit-filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.3));
+  filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.3));
+  text-align: center;
+}
+
+.ribbon-vertical div {
+  position: relative;
+  right: 0.7rem;
+  
 }
 
 .robot-header > h1 {
@@ -64,11 +85,8 @@ body {
 }
 
 .robot-drawing {
-
   position: absolute;
-  margin-top: 2rem;
-  width: 8rem;
-  margin-left: 2rem;
+  top: 13%;
 }
 
 .robot-container {
@@ -79,8 +97,8 @@ body {
   height: 80%;
   background: white;
   justify-content: center;
-  margin-top: 2.3rem;
-  margin-left: -11rem;
+  margin-top: 2.6rem;
+  margin-left: 4rem;
 }
 
 .paragraphs {
@@ -207,8 +225,9 @@ body {
   background-color: rgba(150, 150, 150, 0.8);
   width: 7.4vmin;
   height: 7.4vmin;
-  margin-top: 2rem;
-  margin-left: 1rem;
+  position: absolute;
+  top: 10%;
+  right: 25%;
 }
 
 .eyes {
@@ -229,7 +248,7 @@ body {
 
 .eyes-2 {
   border: 1px solid black;
-  background-color:rgb(255, 255, 255);
+  background-color: rgb(255, 255, 255);
   border-radius: 50%;
   width: 10px;
   height: 10px;
@@ -242,7 +261,7 @@ body {
   background-color: rgb(255, 255, 255);
   width: 2.9vmin;
   height: 1vmin;
-  margin-top: 4.65rem;
+  top: 65%;
   -webkit-animation-name: talk;
   -webkit-animation-duration: 1s;
   -webkit-animation-iteration-count: infinite;
@@ -279,13 +298,15 @@ body {
 .chest-container {
   display: flex;
   justify-content: stretch;
-  margin-left: -4.7vmin;
   width: 20vmin;
   height: 10vmin;
 }
 
 .body {
-  width: 42vmin;
+  position: absolute;
+  top: 85%;
+  left: 23%;
+  width: 8vmin;
   border-radius: 0.2rem 0.2rem 0 0;
   border-top: 10vmin solid #161f49;
   border-left: 2vmin solid transparent;
@@ -293,35 +314,40 @@ body {
 }
 
 .left-arm {
+  position: absolute;
+  top: 85%;
+  left: 7%;
   border: 1px solid black;
   border-radius: 0.2rem 0.2rem 1rem 1rem;
   background-color: rgba(150, 150, 150, 0.8);
-  width: 10vw;
+  width: 3vmin;
   height: 7vh;
-  margin-left: 1rem;
 }
 
 .right-arm {
+  position: absolute;
+  top: 85%;
+  right: 0;
   border: 1px solid black;
   border-radius: 0.2rem 0.2rem 1rem 1rem;
   background-color: rgba(150, 150, 150, 0.8);
-  width: 10vw;
+  width: 3vmin;
   height: 7vh;
 }
 
-.legs
-{
+.legs {
+  position: absolute;
+  top: 186%;
+  left: 30%;
   display: flex;
   justify-content: stretch;
-  
   height: 10vmin;
-  width: 8vmin;
-  margin-left: 1.325rem;
+  width: 10vmin;
 }
 
 .left-leg {
+  position: absolute;
   border: 1px solid black;
-  
   border-radius: 0.2rem 0.2rem 1rem 1rem;
   background-color: rgba(150, 150, 150, 0.8);
   height: 100%;
@@ -329,6 +355,8 @@ body {
 }
 
 .right-leg {
+  position: absolute;
+  right: 10%;
   border: 1px solid black;
   border-radius: 0.2rem 0.2rem 1rem 1rem;
   background-color: rgba(150, 150, 150, 0.8);
@@ -346,7 +374,6 @@ body {
 }
 
 .container-2 {
-  
   color: white;
   height: 40vh;
   width: 99.3%;
@@ -363,9 +390,7 @@ body {
   margin-top: -1.05rem;
   font-size: 1.225rem;
   text-transform: uppercase;
- 
 }
-
 
 #centered-align {
   align-items: center;
@@ -383,7 +408,6 @@ body {
 .create-robot-form {
   display: flex;
   width: 99%;
-  margin-bottom: 2rem;
 }
 
 textarea {
@@ -392,24 +416,29 @@ textarea {
   resize: none;
 }
 
-
-
 label {
   white-space: nowrap;
   display: inline-block;
-  
+  height: fit-content;
+}
+
+input,
+select {
+  height: fit-content;
+}
+
+#colorSelector {
+  height: 1rem;
 }
 
 hr {
   margin-top: -2.75rem;
- 
 }
 
 button {
   width: max-content;
   white-space: nowrap;
   height: 3vmin;
-  
 }
 
 .buttons-test {
@@ -419,3 +448,33 @@ button {
   margin-bottom: 0.765rem;
 }
 
+.button-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-bottom: 0.765rem;
+}
+
+.SelectOptions {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-self: center;
+}
+
+.SelectOptions > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.SelectOptions > div > input {
+  width: fit-content;
+}
+
+.robot-drawing > h4 {
+  position: absolute;
+  top: 300%;
+  left: 25%;
+  white-space: nowrap;
+}

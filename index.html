@@ -32,9 +32,7 @@
     </header>
 
     <div class="container-1">
-      <nav class="robot-header">
-        <span><h1>BASIC ROBOT</h1></span>
-      </nav>
+      <div class="ribbon-vertical"><div>BASIC <br> ROBOT</div></div>
 
       <div class="robot-container">
         <div class="robot-drawing">
@@ -56,10 +54,12 @@
             <div class="right-leg"></div>
           </div>
 
-          <span id="robot-name">
-            <h4 style="white-space: nowrap; margin-top: -0.765rem;
-          ">Robot Name</h4>
-          </span>
+         
+            <h4>Robot Name</h4>
+          
+
+          
+          
         </div>
       </div>
 
@@ -90,49 +90,51 @@
         
       </nav>
       <hr />
-      <div class="create-robot-form">
-        <form id="robot-name">
+      <form class="create-robot-form">
+        
           <label>Name</label>
           <input type="text" placeholder="Robot name" />
-        </form>
-        <form id="select-type">
+       
+       
           <label>Select Type</label>
           <select id="robot-type">
             <option value="basic-robot" selected>Basic Robot</option>
             <option value="small-robot">Small Robot</option>
             
           </select>
-        </form>
+       
 
-        <form>
+        
           <label> Select Color</label>
-          <input type="color" value="#e96126"/>
-        </form>
+          <input type="color" value="#e96126" id="colorSelector"/>
+        
 
-        <form id="select-options">
+          <div class="SelectOptions">
           <label> Select Options</label>
           <br />
+          <div>
           <input type="checkbox" id="can-jump" name="canjump" value="Jumping" />
-          <label for="can-jump"> can jump</label><br />
+          <label for="can-jump">can jump</label></div>
+          <div>
           <input type="checkbox" id="can-talk" name="cantalk" value="Talking" />
-          <label for="can-talk"> cam talk</label><br />
+          <label for="can-talk">can talk</label></div>
+          <div>
           <input type="checkbox" id="can-blink" name="canblink" value="Blink" />
-          <label for="vehicle3"> can blink</label><br />
-        </form>
+          <label for="vehicle3">can blink</label></div>
+        </div>
         
 
-        <form>
+        
           <label id="centered-align">Write a Comment:</label>
           <textarea placeholder="text-area"> </textarea>
-        </form>
         <br>
+
         
-      </div><div class="buttons-test">
-          <button id="create-robot-btn">Create</button>
-          <br>
-          <button id="show-robots-btn"> Show Created Robots</button></span>
-        </div> <hr>
-    </div>
-   
+   </form>
+
+        <div class="button-container">
+          <button type="submit" class="submit-button">Create</button>
+          <button type="reset" class="reset-button">Show Created Robots</button>
+        </div>
   </body>
 </html>
