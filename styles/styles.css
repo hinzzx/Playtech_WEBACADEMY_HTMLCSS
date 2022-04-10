@@ -7,7 +7,7 @@
 }
 
 body {
-  background: url(pexels-tara-winstead-8386422.jpg);
+  background: url("../images/pexels-tara-winstead-8386422.jpg") no-repeat center center fixed;
   background-repeat: no-repeat;
   background-size: cover;
   height: 97vh;
