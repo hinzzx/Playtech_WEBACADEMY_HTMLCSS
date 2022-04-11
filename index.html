@@ -3,7 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
+    <link rel="icon" href="./images/favicon.svg" type="image/gif" sizes="16x16">
+
     <link rel="stylesheet" href="./styles/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -13,7 +15,9 @@
     />
     <script src="./scripts/script.js"></script>
 
-    <title>Document</title>
+
+   
+    <title>Robot factory</title>
   </head>
   <body onload="showAlert()">
     <header class="page-header">
@@ -94,22 +98,25 @@
       <hr />
       <form class="create-robot-form">
         
+        <div>
           <label>Name</label>
           <input type="text" placeholder="Robot name" />
+       </div>
        
-       
+       <div>
           <label>Select Type</label>
           <select id="robot-type">
             <option value="basic-robot" selected>Basic Robot</option>
             <option value="small-robot">Small Robot</option>
             
           </select>
+        </div>
        
 
-        
+        <div>
           <label> Select Color</label>
           <input type="color" value="#e96126" id="colorSelector"/>
-        
+        </div>
 
           <div class="SelectOptions">
           <label> Select Options</label>
@@ -126,11 +133,11 @@
         </div>
         
 
-        
+        <div class="SelectOptions">
           <label id="centered-align">Write a Comment:</label>
           <textarea placeholder="text-area"> </textarea>
         <br>
-
+</div>
         
    </form>
 
@@ -138,5 +145,7 @@
           <button type="submit" class="submit-button">Create</button>
           <button type="reset" class="reset-button">Show Created Robots</button>
         </div>
+
+        <hr>
   </body>
 </html>
