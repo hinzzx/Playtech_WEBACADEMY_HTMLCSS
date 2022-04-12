@@ -13,7 +13,7 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap"
       rel="stylesheet"
     />
-    <script src="./scripts/script.js"></script>
+    
 
 
    
@@ -96,26 +96,38 @@
         
       </nav>
       <hr />
-      <form class="create-robot-form">
-        
-        <div>
-          <label>Name</label>
-          <input type="text" placeholder="Robot name" />
+      <div class="required">
+          <section>
+            <p>
+              <i>INPUTs with the <span style="color: red;">*</span> are required.</i>
+            </p>
+          </section>
+        </div>
+
+      <form class="create-robot-form" id="form1">     
+       <div>
+          <label>Name <span style="color: red;">*</span></label>
+          <input type="text" placeholder="Robot name"  id="robot-name"/>
+          <small></small>
        </div>
        
        <div>
-          <label>Select Type</label>
-          <select id="robot-type">
-            <option value="basic-robot" selected>Basic Robot</option>
-            <option value="small-robot">Small Robot</option>
+          <label>Select Type <span style="color: red;">*</span> </label>
+          <select id="robot-type" id="robot-type" required>
+            <option value="unselected" selected> -- Unselected -- </option>
+            <option value="male-robot">Male</option>
+            <option value="female-robot">Female</option>
             
           </select>
+          <small></small>
+
         </div>
-       
 
         <div>
-          <label> Select Color</label>
-          <input type="color" value="#e96126" id="colorSelector"/>
+          <label> Select Color <span style="color: red;">*</span></label>
+          <input type="color" value="" id="colorSelector" required/>
+          <small></small>
+
         </div>
 
           <div class="SelectOptions">
@@ -130,22 +142,26 @@
           <div>
           <input type="checkbox" id="can-blink" name="canblink" value="Blink" />
           <label for="vehicle3">can blink</label></div>
+          
         </div>
         
 
         <div class="SelectOptions">
-          <label id="centered-align">Write a Comment:</label>
+          <label id="centered-align">Robot phrase:</label>
           <textarea placeholder="text-area"> </textarea>
         <br>
 </div>
-        
-   </form>
 
-        <div class="button-container">
-          <button type="submit" class="submit-button">Create</button>
-          <button type="reset" class="reset-button">Show Created Robots</button>
+       
+        </form>
+ <div class="button-container">
+          <button type="submit" class="submit-button" form="form1">Create</button>
+          <button type="reset" class="reset-button" form="form1">Show Created Robots</button>
         </div>
+      
 
         <hr>
+        <script src="./scripts/script.js"></script>
   </body>
+  
 </html>

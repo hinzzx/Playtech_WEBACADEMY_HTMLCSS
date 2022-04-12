@@ -25,7 +25,7 @@ function showAlert() {
 let Robots = [
   (robot1 = {
     name: "Robot1",
-    color: "black",
+    color: "White",
     type: "male",
     frazichka: "",
   }),
@@ -37,4 +37,49 @@ let Robots = [
   }),
 ];
 
-console.log(robot2.frazichka); // Тест дали работи 
+let newRobots = [];
+
+console.log(robot2.frazichka); // Тест дали работи
+
+// Валидирането на формата започва от тук 
+
+const robotName = document.querySelector("#robot-name");
+const robotType = document.querySelector("#robot-type");
+const robotColor = document.querySelector("#colorSelector");	
+const form = document.querySelector("#form1");
+
+  form.addEventListener("submit", (e) => {
+
+  if (robotName.value === "") {
+    alert("Моля въведете име на робота");
+    e.preventDefault();
+  } else if (robotType.value === "" || robotType.value === "unselected") {
+    alert("Моля въведете тип на робота");
+    e.preventDefault();
+  } else if (robotColor.value === "" || robotColor.value === "") {
+    alert("Моля въведете цвят на робота");
+    e.preventDefault();
+  } else {
+    let newRobot = {
+      name: robotName.value,
+      color: robotColor.value,
+      type: robotType.value,
+      frazichka: "Hello, " + robotName.value,
+    };
+    newRobots.push(newRobot);
+    console.log(newRobot);
+    alert("Вашият робот е готов!");
+    e.preventDefault();
+  }
+});
+
+form.addEventListener("reset", (e) => {
+  
+  if(newRobots) {
+    alert("Вашите роботи : " + newRobots.map(robot => robot.name + " " + robot.color + " " + robot.type));
+    e.preventDefault();
+  }
+});
+
+
+

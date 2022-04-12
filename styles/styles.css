@@ -387,7 +387,8 @@ body {
 }
 
 .form-header {
-  margin-top: -1.05rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
   font-size: 1.225rem;
   text-transform: uppercase;
 }
@@ -452,7 +453,7 @@ button {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  margin-bottom: 0.765rem;
+  margin-bottom: 1.125rem;
 }
 
 .SelectOptions {
@@ -478,3 +479,15 @@ button {
   left: 25%;
   white-space: nowrap;
 }
+
+.required {
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  background-color: rgb(255, 113, 113);
+  padding: 10px;
+  width: fit-content;
+  border: 1px solid white;
+  border-radius: 0.2rem;
+}
+
+
