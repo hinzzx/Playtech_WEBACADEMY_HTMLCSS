@@ -44,6 +44,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  
 }
 
 .robot-header {
@@ -77,6 +78,10 @@ body {
   position: relative;
   right: 0.7rem;
   
+}
+
+#ribbon-text {
+  text-transform: uppercase;
 }
 
 .robot-header > h1 {
@@ -198,7 +203,7 @@ body {
   font-size: 20px;
   margin-bottom: 1rem;
   text-align: justify;
-  padding-right: 6%;
+  margin-right: 6%;
   font-size: smaller;
 }
 
@@ -218,6 +223,7 @@ body {
   border-radius: 1rem;
   font-size: 20px;
   margin-bottom: 1rem;
+  margin-right: 9%;
   font-size: smaller;
 }
 
@@ -438,6 +444,7 @@ select {
 }
 
 hr {
+  
   margin-top: -2.75rem;
 }
 
@@ -458,7 +465,13 @@ button {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  margin-bottom: 1.125rem;
+  margin-bottom: 2.125rem;
+}
+
+.button-container-2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
 }
 
 .SelectOptions {

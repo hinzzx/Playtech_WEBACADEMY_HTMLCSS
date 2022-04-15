@@ -31,7 +31,7 @@ let Robots = [
   }),
   (robot2 = {
     name: "Robot2",
-    color: "black",
+    color: "Black",
     type: "female",
     frazichka: "Hello, " + robot1.name,
   }),
@@ -41,15 +41,14 @@ let newRobots = [];
 
 console.log(robot2.frazichka); // Тест дали работи
 
-// Валидирането на формата започва от тук 
+// Валидирането на формата започва от тук
 
 const robotName = document.querySelector("#robot-name");
 const robotType = document.querySelector("#robot-type");
-const robotColor = document.querySelector("#colorSelector");	
+const robotColor = document.querySelector("#colorSelector");
 const form = document.querySelector("#form1");
 
-  form.addEventListener("submit", (e) => {
-
+form.addEventListener("submit", (e) => {
   if (robotName.value === "") {
     alert("Моля въведете име на робота");
     e.preventDefault();
@@ -74,12 +73,21 @@ const form = document.querySelector("#form1");
 });
 
 form.addEventListener("reset", (e) => {
-  
-  if(newRobots) {
-    alert("Вашите роботи : " + newRobots.map(robot => robot.name + " " + robot.color + " " + robot.type));
+  if (newRobots) {
+    alert(
+      `Вашите роботи са: \n${newRobots.map(
+        (robot) =>
+         `\n         Name: ${robot.name} 
+          \n         Color: ${robot.color} 
+          \n         Type: ${robot.type} 
+          \n ------------------------------- \n
+         `
+      )} `
+    );
     e.preventDefault();
   }
 });
 
 
+// Упражнение 3
 
