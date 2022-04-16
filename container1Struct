@@ -1,0 +1,72 @@
+            
+            // Архитектурата на секцията с робота.
+
+<section class="container-1">
+      <div class="ribbon-vertical"><div id="ribbon-text">BASIC <br> ROBOT</div></div>
+
+      <div class="robot-container">
+        <div class="robot-drawing">
+          <div class="robot-head">
+            <div class="mouth"></div>
+
+            <div class="eyes">
+              <div class="eyes-1"></div>
+              <div class="eyes-2"></div>
+            </div>
+          </div>
+          <div class="chest-container">
+            <div class="left-arm"></div>
+            <div class="body"></div>
+            <div class="right-arm"></div>
+          </div>
+          <div class="legs">
+            <div class="left-leg"></div>
+            <div class="right-leg"></div>
+          </div>
+
+         
+            <h4 id="robot-name-h4">Robot Name</h4>
+          
+
+          
+          
+        </div>
+
+        <!-- may add later for the actions -->
+
+        <!-- <div class="button-container-2">
+          <button> Talk </button>
+          <button> Talk </button>
+          <button> Talk </button>
+        </div> -->
+
+      </div>
+
+      <div class="paragraphs">
+        <section>
+          <p id="para-1">
+            <strong>P</strong>aragraph text here. Text-align on left, 3% space from right border.
+            Text is only 2 lines and ends with three dots ... Because its too
+            long. On hover full text is shown as tooltip. First letter is bold.
+          </p>
+          <p id="para-2">
+            <span id="italic">Paragraph</span> text here. Text justified, 6% space from right border.
+            Text is only 2 lines and ends with three dots ... Because its too
+            long. On hover full text is shown. First word is Italic.
+          </p>
+          <p id="para-3">
+            <img src="./images/goodluck.jpg" alt="Goodluck Image" class="goodluck-img" />
+            Paragraph text here. Text-align on left, 9 % from right border.
+            Image on left side.
+          </p>
+         
+        </section>
+
+        
+      </div>
+
+      
+    </section>
+
+
+

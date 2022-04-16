@@ -7,7 +7,7 @@ let phrases = [
   "How are you ? ",
   "I am fine, thank you",
   "I am not a robot, I am a human ",
-  "My name is *blurred* - hehehe not yet.",
+  `My name is *blurred* - hehehe not yet.`,
 ];
 
 // Упражнение 1 => вкаран в html // <body onload="showAlert()"> //
@@ -75,8 +75,7 @@ form.addEventListener("submit", (e) => {
 form.addEventListener("reset", (e) => {
   if (newRobots) {
     alert(
-      `Вашите роботи са: \n${newRobots.map(
-        (robot) =>
+      `Вашите роботи са: \n${newRobots.map((robot) =>
          `\n         Name: ${robot.name} 
           \n         Color: ${robot.color} 
           \n         Type: ${robot.type} 
@@ -91,3 +90,25 @@ form.addEventListener("reset", (e) => {
 
 // Упражнение 3
 
+// При зареждане на страницата вече не трябва да имаме предифиниран робот.
+// Първоначално ще се вижда само формата.
+// Робота ще трявба да се изгражда динамично спрямо данни от обект.
+// След всеки събмит на формата ще трябва да се вика функция, която да създава нова секция с робот. 
+// Секцията обхваща цялата горна част под логото на PlayTech до формата. 
+// Включително и параграфите и рибона с текст.
+// Спрямо данните в обекта робота ще се генерира автоматично като преизползва DOM структурата,
+// която имате в момента.
+// Полето с името на робота вече ще е заместено със стойността от формата. 
+// Робота ще има два варианта – мъжки и женски.
+// Женския може да има поличка, по което да се различава от мъжкия (вече съществуващия ни робот).
+// Цвета на тялото му ще се определя също от стойността, която е въведена при създаването.
+// Текста в рибона ще е спрямо типа – „Male Robot“ , “Female Robot”.
+ 
+
+const body = document.querySelector("body");
+const robotSectionOne = document.querySelector("robot-section-1");
+
+body.addEventListener((e) => {
+ body.onload = robotSectionOne.classList.add("d-none");
+ e.preventDefault();
+})

@@ -34,6 +34,8 @@ body {
   height: 2rem;
 }
 
+/* Контейнера с роботчето, параграфите и рибона */
+
 .container-1 {
   position: relative;
   height: 45vh;
@@ -57,6 +59,8 @@ body {
   white-space: nowrap;
   padding-right: 1rem;
 }
+
+/* Рибона */
 
 .ribbon-vertical {
   position: absolute;
@@ -94,6 +98,8 @@ body {
   top: 13%;
 }
 
+/* Контейнера с роботчето */
+
 .robot-container {
   display: flex;
   border: 1px black solid;
@@ -124,6 +130,8 @@ body {
   flex-direction: column;
   justify-content: space-between;
 }
+
+/* Анимациите за появяването на параграфите */
 
 @keyframes fadeIn {
   0% {
@@ -227,6 +235,8 @@ body {
   font-size: smaller;
 }
 
+/* Изграждането на роботчето */
+
 .robot-head {
   display: flex;
   justify-content: center;
@@ -278,6 +288,9 @@ body {
   -webkit-animation-timing-function: linear;
   -webkit-animation-delay: 3s;
 }
+
+/* Анимацията за говор на роботчето */
+
 @-webkit-keyframes talk {
   0% {
   }
@@ -311,6 +324,8 @@ body {
   width: 20vmin;
   height: 10vmin;
 }
+
+/* BODY-то на роботчето ! */
 
 .body {
   position: absolute;
@@ -382,6 +397,8 @@ body {
   margin-top: -1.025rem;
   margin-bottom: -1.025rem;
 }
+
+/* Секцията с формата за роботчето */
 
 .container-2 {
   color: white;
@@ -508,4 +525,14 @@ button {
   border-radius: 0.2rem;
 }
 
+
+/* Класове за ДОМ Манипулация */
+
+.d-none {
+  display: none;
+}
+
+.d-flex {
+  display: flex;
+}
 
