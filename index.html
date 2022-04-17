@@ -19,7 +19,7 @@
    
     <title>Robot factory</title>
   </head>
-  <body onload="showAlert()">
+  <body onload="showAlert(); changeClassOnLoad()">
     <header class="page-header">
       <nav class="navbar">
         <li>
@@ -68,13 +68,6 @@
           
         </div>
 
-        <!-- may add later for the actions -->
-
-        <!-- <div class="button-container-2">
-          <button> Talk </button>
-          <button> Talk </button>
-          <button> Talk </button>
-        </div> -->
 
       </div>
 
@@ -169,12 +162,12 @@
        
         </form>
  <div class="button-container">
-          <button type="submit" class="submit-button" form="form1" >Create</button>
+          <button type="submit" class="submit-button" form="form1" onclick="createRobot()">Create</button>
           <button type="reset" class="reset-button" form="form1">Show Created Robots</button>
-        </div>
+        </div><hr>
     </section>
 
-        <hr>
+        
         <script src="./scripts/script.js"></script>
   </body>
   
