@@ -110,39 +110,39 @@ const robotDrawing = document.querySelector("robot-drawing");
 
 // добавя класа d-none (display: none) на секцията с роботчето, при зареждане на страницата
 
-function changeClassOnLoad() {
-  robotSectionOne.className = robotSectionOne.className + " d-none";
-}
+// function changeClassOnLoad() {
+//   robotSectionOne.className = robotSectionOne.className + " d-none";
+// }
 
 // create new dynamic section with robot every time we submit the form
 
-function createRobot() {
+// function createRobot() {
 
-  if (newRobots !== undefined || newRobots !== null) {
-    newRobots.map((robotche) => {
-    let newRobotSection = document.createElement("section");
-    newRobotSection.className = "container-1";
-    newRobotSection.id = `robot-section-${newRobots.indexOf(robotche)}`;
-    body.appendChild(newRobotSection);
-    body.insertBefore(newRobotSection, robotSectionOne);
-    let newRobotDiv = newRobotSection.appendChild(document.createElement("div"));
-    newRobotDiv.className = "robot-drawing";
-    newRobotDiv.id = "robot-drawing";
-    newRobotSection.innerHTML = `<div class="ribbon-vertical">
-    <div id="ribbon-text"> ${robotche.type} </div> </div>`;
-    newRobotSection.innerHTML += `<div class="robot-container">`;
-    newRobotSection.innerHTML += `<div class="robot-head">
-    <div class="mouth"></div>
+//   if (newRobots !== undefined || newRobots !== null) {
+//     newRobots.map((robotche) => {
+//     let newRobotSection = document.createElement("section");
+//     newRobotSection.className = "container-1";
+//     newRobotSection.id = `robot-section-${newRobots.indexOf(robotche)}`;
+//     body.appendChild(newRobotSection);
+//     body.insertBefore(newRobotSection, robotSectionOne);
+//     let newRobotDiv = newRobotSection.appendChild(document.createElement("div"));
+//     newRobotDiv.className = "robot-drawing";
+//     newRobotDiv.id = "robot-drawing";
+//     newRobotSection.innerHTML = `<div class="ribbon-vertical">
+//     <div id="ribbon-text"> ${robotche.type} </div> </div>`;
+//     newRobotSection.innerHTML += `<div class="robot-container">`;
+//     newRobotSection.innerHTML += `<div class="robot-head">
+//     <div class="mouth"></div>
 
-    <div class="eyes">
-      <div class="eyes-1"></div>
-      <div class="eyes-2"></div>
-    </div>
-  </div>` ;
+//     <div class="eyes">
+//       <div class="eyes-1"></div>
+//       <div class="eyes-2"></div>
+//     </div>
+//   </div>` ;
    
-    });
+//     });
   
-}
-}
+// }
+// }
 
 
