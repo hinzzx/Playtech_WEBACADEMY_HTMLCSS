@@ -537,3 +537,35 @@ button {
   display: flex;
 }
 
+.skirt {
+	position: absolute;
+	top: 186%;
+	left: 22%;
+	width: 18vmin;
+	clip-path: polygon(12% 0px, 55% 0px, 71% 31%, 0px 31%);
+	height: 13em;
+	background-color: rgb(255, 0, 234);
+}
+
+.left-leg-skirt {
+	position: absolute;
+	border: 1px solid black;
+	border-radius: 0.2rem 0.2rem 1rem 1rem;
+	background-color: rgba(150, 150, 150, 0.8);
+	height: 58%;
+	width: 17%;
+	top: 254%;
+	left: 30%;
+}
+
+.right-leg-skirt {
+	position: absolute;
+	right: 10%;
+	border: 1px solid black;
+	border-radius: 0.2rem 0.2rem 1rem 1rem;
+	background-color: rgba(150, 150, 150, 0.8);
+	height: 60%;
+	width: 18%;
+	top: 254%;
+	left: 53%;
+}
