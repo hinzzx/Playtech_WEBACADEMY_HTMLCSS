@@ -48,8 +48,13 @@ const robotName = document.querySelector("#robot-name");
 const robotType = document.querySelector("#robot-type");
 const robotColor = document.querySelector("#colorSelector");
 const form = document.querySelector("#form1");
+const buttonRobotSections = document.querySelector("btn-show-robot-sections");
+
 
 form.addEventListener("submit", (e) => {
+  
+    
+    
   if (robotName.value === "") {
     alert("Моля въведете име на робота");
     e.preventDefault();
@@ -71,7 +76,11 @@ form.addEventListener("submit", (e) => {
     alert("Вашият робот е готов!");
     e.preventDefault();
   }
+
+ 
+
 });
+
 
 form.addEventListener("reset", (e) => {
   if (newRobots) {
@@ -110,6 +119,7 @@ const robotSectionOne = document.querySelector("#robot-section-1");
 const robotDrawing = document.querySelector("robot-drawing");
 const small = document.querySelector("small");
 
+
 // добавя класа d-none (display: none) на секцията с роботчето, при зареждане на страницата
 
 function changeClassOnLoad() {
@@ -118,22 +128,22 @@ function changeClassOnLoad() {
 
 // create new dynamic section with robot every time we submit the form
 
-function createRobot() {
+function showCreatedRobots() {
   if (newRobots && newRobots.length > 0) {
     newRobots.forEach((robotche) => {
       
       // Ако роботчето е женско, му слагаме клас skirt (пола)
 
       if (robotche.type === "female-robot" || robotche.type === "Female") {
+
+        // Масив за женските роботчета 
+        let robotchenceF = [];
+        
         let newRobotSection = document.createElement("section");
         newRobotSection.className = "container-1";
         newRobotSection.id = `robot-section-${newRobots.indexOf(robotche) + 1}`;
         body.appendChild(newRobotSection);
         body.insertBefore(newRobotSection, robotSectionOne);
-        let newRobotDiv = newRobotSection.appendChild(
-          document.createElement("div")
-        );
-        newRobotDiv.className = "testche";
         newRobotSection.innerHTML += `
       <div class="ribbon-vertical">
       <div id="ribbon-text">${robotche.type}</div></div>
@@ -189,8 +199,14 @@ function createRobot() {
       
     </section>
       `;
+      robotchenceF.push(newRobotSection);
+      console.log(robotchenceF);
+      
       // Ако роботчето е мъжко
       } else {
+        // Масив за мъжките роботчета
+        let robotchenceM = [];
+        
         let newRobotSection = document.createElement("section");
         newRobotSection.className = "container-1";
         newRobotSection.id = `robot-section-${newRobots.indexOf(robotche) + 1}`;
@@ -256,7 +272,15 @@ function createRobot() {
     
   </section>
     `;
+    robotchenceM.push(newRobotSection);
+    console.log(robotchenceM);
+
       }
+
+      
     });
+
+    
   }
+  
 }

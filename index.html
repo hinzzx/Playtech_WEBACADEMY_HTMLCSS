@@ -175,14 +175,16 @@
           <textarea placeholder="text-area"> </textarea>
           <br />
         </div>
+        
+        
       </form>
       <div class="button-container">
-        <button type="submit" class="submit-button" form="form1">Create</button>
+        <button type="submit" class="submit-button" form="form1" onsubmit="showCreatedRobots()">Create</button>
         <button type="reset" class="reset-button" form="form1">
           Show Created Robots
         </button>
-        <button type="button" onclick="createRobot()">
-          Create robot sections
+        <button type="button" class="btn-show-robot-sections" onclick="showCreatedRobots()">
+          Show robot sections
         </button>
       </div>
       <hr />
